@@ -19,7 +19,14 @@ function App() {
       <div className="container py-4">
         <nav className="navbar navbar-expand-lg navbar-light bg-light rounded shadow-sm mb-4">
           <div className="container-fluid">
-            <Link className="navbar-brand fw-bold" to="/">OctoFit Tracker</Link>
+            <Link className="navbar-brand fw-bold d-flex align-items-center gap-2" to="/">
+              <img
+                src={`${process.env.PUBLIC_URL}/octofitapp-small.svg`}
+                alt="OctoFit"
+                className="app-logo"
+              />
+              <span>OctoFit Tracker</span>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"

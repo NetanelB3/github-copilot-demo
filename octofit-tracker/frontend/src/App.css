@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+:root {
+  --ink: #051937;
+  --accent: #2f80ed;
+  --accent-soft: #b3d4ff;
+  --bg: #eef3ff;
+  --card: #ffffff;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Segoe UI', Tahoma, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  margin: 0;
+}
+
+nav.navbar {
+  border: 1px solid rgba(5, 25, 55, 0.05);
+  background: var(--card);
+}
+
+.navbar-brand {
+  letter-spacing: 0.04em;
+}
+
+.home-hero {
+  background: linear-gradient(135deg, rgba(47, 128, 237, 0.12), rgba(5, 25, 55, 0.08));
+  border-radius: 24px;
+}
+
+.home-hero table th {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(5, 25, 55, 0.65);
+}
+
+.home-hero table td {
+  font-size: 0.95rem;
+}
+
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 18px;
+}
+
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(5, 25, 55, 0.15);
+}
+
+.stat-pill {
+  background: rgba(47, 128, 237, 0.08);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.table thead {
+  background: rgba(47, 128, 237, 0.08);
+}
+
+.table-hover tbody tr:hover {
+  background: rgba(179, 212, 255, 0.35);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(47, 128, 237, 0.2);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-outline-primary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+  background: var(--accent);
+  color: #fff;
+}

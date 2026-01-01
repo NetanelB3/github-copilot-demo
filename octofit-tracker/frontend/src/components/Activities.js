@@ -41,7 +41,7 @@ const Activities = () => {
         <div className="d-flex flex-column flex-md-row justify-content-between gap-3">
           <div>
             <h2 className="h4 mb-1">Activities</h2>
-            <p className="text-muted mb-0">Live feed of workouts logged by OctoFit students.</p>
+            <p className="text-muted mb-0">Live feed of workouts logged by SepioFit students.</p>
           </div>
           <div className="d-flex gap-2">
             <button className="btn btn-outline-primary" onClick={fetchActivities}>
@@ -178,7 +178,7 @@ const Activities = () => {
                     </div>
                     <div className="col-12">
                       <label className="form-label">User ID</label>
-                      <input type="text" className="form-control" placeholder="Paste OctoFit user ID" />
+                      <input type="text" className="form-control" placeholder="Paste SepioFit user ID" />
                     </div>
                   </form>
                 )}

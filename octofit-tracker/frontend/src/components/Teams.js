@@ -32,7 +32,7 @@ const Teams = () => {
             <div className="d-flex justify-content-between align-items-center">
               <div>
                 <h2 className="h4 mb-1">Teams</h2>
-                <p className="text-muted mb-0">Friendly squads powering OctoFit challenges.</p>
+                <p className="text-muted mb-0">Friendly squads powering SepioFit challenges.</p>
               </div>
               <button className="btn btn-outline-primary" onClick={fetchTeams}>
                 Refresh list

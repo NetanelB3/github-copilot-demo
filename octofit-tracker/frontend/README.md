@@ -1,6 +1,6 @@
-# OctoFit Tracker Frontend
+# SepioFit Tracker Frontend
 
-This project was bootstrapped manually to mirror Create React App defaults for the OctoFit Tracker workshop. To start the development server:
+This project was bootstrapped manually to mirror Create React App defaults for the SepioFit Tracker workshop. To start the development server:
 
 ```bash
 cd octofit-tracker/frontend

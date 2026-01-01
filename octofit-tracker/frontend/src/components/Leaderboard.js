@@ -34,7 +34,7 @@ const Leaderboard = () => {
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
           <div>
             <h2 className="h4 mb-1">Leaderboard</h2>
-            <p className="text-muted mb-0">Competitive standings for the current OctoFit challenge.</p>
+            <p className="text-muted mb-0">Competitive standings for the current SepioFit challenge.</p>
           </div>
           <div className="btn-group" role="group">
             <button type="button" className="btn btn-outline-secondary" onClick={() => setSortAsc(false)}>

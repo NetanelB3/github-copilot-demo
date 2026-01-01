@@ -12,6 +12,7 @@ import Profile from './components/Profile';
 import Settings from './components/Settings';
 import Login from './components/Login';
 import Register from './components/Register';
+import { BRAND_IMAGE_URL, BRAND_LOGO_FALLBACK_URL } from './config';
 
 function App() {
   return (
@@ -21,11 +22,15 @@ function App() {
           <div className="container-fluid">
             <Link className="navbar-brand fw-bold d-flex align-items-center gap-2" to="/">
               <img
-                src={`${process.env.PUBLIC_URL}/octofitapp-small.svg`}
-                alt="OctoFit"
-                className="app-logo"
+                src={BRAND_IMAGE_URL}
+                alt="SepioFit"
+                className="app-logo app-logo--round"
+                onError={(event) => {
+                  event.currentTarget.onerror = null;
+                  event.currentTarget.src = BRAND_LOGO_FALLBACK_URL;
+                }}
               />
-              <span>OctoFit Tracker</span>
+              <span>SepioFit Tracker</span>
             </Link>
             <button
               className="navbar-toggler"

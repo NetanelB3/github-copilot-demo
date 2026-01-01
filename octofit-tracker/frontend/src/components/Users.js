@@ -33,7 +33,7 @@ const Users = () => {
         <div className="d-flex flex-column flex-md-row justify-content-between gap-3">
           <div>
             <h2 className="h4 mb-1">Users</h2>
-            <p className="text-muted mb-0">Student profiles synced from OctoFit authentication.</p>
+            <p className="text-muted mb-0">Student profiles synced from SepioFit authentication.</p>
           </div>
           <form className="d-flex gap-2" role="search">
             <input

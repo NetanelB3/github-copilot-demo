@@ -28,7 +28,7 @@ const Workouts = () => {
         <div className="d-flex justify-content-between flex-column flex-md-row gap-3">
           <div>
             <h2 className="h4 mb-1">Workouts</h2>
-            <p className="text-muted mb-0">Coach-approved workout templates for OctoFit.</p>
+            <p className="text-muted mb-0">Coach-approved workout templates for SepioFit.</p>
           </div>
           <button className="btn btn-outline-primary" onClick={fetchWorkouts}>
             Refresh workouts

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BRAND_IMAGE_URL, BRAND_LOGO_FALLBACK_URL } from '../config';
 
 const Dashboard = () => {
   const cards = [
@@ -11,8 +12,21 @@ const Dashboard = () => {
   return (
     <div className="card border-0 shadow-sm">
       <div className="card-body">
-        <h2 className="h4">Dashboard</h2>
-        <p className="text-muted">High-level status of OctoFit Tracker participation.</p>
+        <div className="d-flex flex-column flex-md-row align-items-md-center gap-3 mb-2">
+          <img
+            src={BRAND_IMAGE_URL}
+            alt="SepioFit rubber duck"
+            className="dashboard-brand-img"
+            onError={(event) => {
+              event.currentTarget.onerror = null;
+              event.currentTarget.src = BRAND_LOGO_FALLBACK_URL;
+            }}
+          />
+          <div>
+            <h2 className="h4 mb-1">Dashboard</h2>
+            <p className="text-muted mb-0">High-level status of SepioFit Tracker participation.</p>
+          </div>
+        </div>
         <div className="row g-4 mt-2">
           {cards.map((card) => (
             <div className="col-md-6 col-xl-3" key={card.title}>

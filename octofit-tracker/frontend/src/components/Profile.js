@@ -16,7 +16,7 @@ const Profile = () => {
         <div className="d-flex justify-content-between align-items-start">
           <div>
             <h2 className="h4 mb-1">Profile</h2>
-            <p className="text-muted mb-0">Snapshot of your OctoFit administrator account.</p>
+            <p className="text-muted mb-0">Snapshot of your SepioFit administrator account.</p>
           </div>
           <button className="btn btn-outline-primary" onClick={() => setShowModal(true)}>
             Update profile

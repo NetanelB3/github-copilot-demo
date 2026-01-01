@@ -11,14 +11,21 @@ def api_root(request, format=None):
     if request.method == 'POST':
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
-    # You can replace this with your actual Codespace URL when available
-    base_url = 'http://localhost:8000/'
+    codespace_base = 'https://zany-space-succotash-x59rgj4ww9prc679v-8000.app.github.dev/'
+    localhost_base = 'http://localhost:8000/'
+
+    def build_endpoints(base_url):
+        return {
+            'users': base_url + 'api/users/?format=api',
+            'teams': base_url + 'api/teams/?format=api',
+            'activities': base_url + 'api/activities/?format=api',
+            'leaderboard': base_url + 'api/leaderboard/?format=api',
+            'workouts': base_url + 'api/workouts/?format=api'
+        }
+
     return Response({
-        'users': base_url + 'api/users/?format=api',
-        'teams': base_url + 'api/teams/?format=api',
-        'activities': base_url + 'api/activities/?format=api',
-        'leaderboard': base_url + 'api/leaderboard/?format=api',
-        'workouts': base_url + 'api/workouts/?format=api'
+        'codespace': build_endpoints(codespace_base),
+        'localhost': build_endpoints(localhost_base)
     })
 
 class UserViewSet(viewsets.ModelViewSet):

@@ -25,7 +25,15 @@ SECRET_KEY = "django-insecure-cwm8y41=cv%v2x+i4p5$bx9b!r-u%9z2v#e8bbavoigt#mbq(h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'zany-space-succotash-x59rgj4ww9prc679v-8000.app.github.dev',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://zany-space-succotash-x59rgj4ww9prc679v-8000.app.github.dev'
+]
 
 
 # Application definition
